@@ -1,0 +1,45 @@
+{
+  "name": "teatown-smart-experience",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-shared.mjs",
+    "dev": "vite",
+    "build": "node scripts/sync-shared.mjs && tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:db": "bash supabase/tests/run.sh",
+    "qr:cards": "node scripts/qr-cards.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
+    "@zxing/browser": "^0.2.1",
+    "@zxing/library": "^0.23.0",
+    "lucide-react": "^1.80.0",
+    "pdfjs-dist": "^6.5.438",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.7",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/cairo": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "@types/node": "^26.6.10",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.2",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "autoprefixer": "^10.7.0",
+    "jsdom": "^31.0.1",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.2"
+  }
+}
