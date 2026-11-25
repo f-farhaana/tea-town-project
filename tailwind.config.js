@@ -1,0 +1,12 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{ts,tsx}'],
+  theme: {
+    extend: {
+      colors: { orange: { DEFAULT: '#FF581C', 600: '#E84A10' }, ink: '#0B0B0B', gold: '#E9A322', cream: '#FFF5E5', charcoal: '#222222', wa: '#25D366' },
+      fontFamily: { display: ['Anton', 'Barlow Condensed', 'Impact', 'sans-serif'], sans: ['Manrope', 'system-ui', 'sans-serif'], ar: ['Cairo', 'Manrope', 'sans-serif'] },
+      transitionTimingFunction: { brand: 'cubic-bezier(.2,.8,.2,1)' },
+    },
+  },
+  plugins: [],
+}

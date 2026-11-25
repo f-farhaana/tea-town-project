@@ -1,0 +1,13 @@
+/* Tea Town design tokens (mirror of src/config/tokens.ts). Import into any Tea Town app. */
+:root {
+  --tt-orange: #FF581C;
+  --tt-black: #0B0B0B;
+  --tt-gold: #E9A322;
+  --tt-cream: #FFF5E5;
+  --tt-charcoal: #222222;
+  --tt-whatsapp: #25D366;
+  --tt-font-display: 'Anton', 'Barlow Condensed', Impact, sans-serif;
+  --tt-font-body: 'Manrope', system-ui, sans-serif;
+  --tt-font-arabic: 'Cairo', 'Manrope', sans-serif;
+  --tt-ease: cubic-bezier(.2,.8,.2,1);
+}
